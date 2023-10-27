@@ -1,0 +1,35 @@
+#slider {
+    width: 600px;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    border-radius: 5%;
+}
+.slides {
+    display: flex;
+    height: 100%;
+}
+
+span {
+    position: absolute;
+    top: 30%;
+    color: #000;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 25%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.left{
+    left: 35%
+}
+.right{
+    right: 35%;
+}
+.startStop{
+    top: 15%;
+    margin: 10px;
+}
