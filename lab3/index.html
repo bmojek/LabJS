@@ -7,29 +7,42 @@
 </head>
 <body>
     <div class="record" style="text-align: center;">
+        <div>
+            <span>Metronom</span>
+            <input type="number" id="bpm" min="1" max="300" value="100">
+            <button id="metronom">></button>
+        </div>
         <span>Nagraj</span> <span>Odtwórz</span>
         <div class="channels">
             <button id="channel1Record">Kanał 1</button>
             <button id="channel1Play">Kanał 1</button>
+            <input class="inp" type="checkbox">   
         </div>
         <div class="channels">
             <button id="channel2Record">Kanał 2</button>
             <button id="channel2Play">Kanał 2</button>
+            <input class="inp" type="checkbox">
         </div>
         <div class="channels">
             <button id="channel3Record">Kanał 3</button>
             <button id="channel3Play">Kanał 3</button>
+            <input class="inp" type="checkbox">
         </div>
         <div class="channels">
             <button id="channel4Record">Kanał 4</button>
             <button id="channel4Play">Kanał 4</button>
+            <input class="inp" type="checkbox">
         </div>
-        <div class="channels">
-            <button id="play-all">Odtwórz wszystkie 4</button>
+        <div>
+            <button id="play-all">Odtwórz wszystkie</button>
         </div>
+        <div>
+            <button id="play-selected">Odtwórz wybrane</button>
+        </div>
+        
     </div>
 
-
+    <audio src="./sounds/met.mp3" controls id="met"></audio>
     <audio src="./sounds/clap.wav" controls id="s1"></audio>
     <audio src="./sounds/hihat.wav" controls id="s2"></audio>
     <audio src="./sounds/boom.wav" controls id="s3"></audio>
@@ -40,5 +53,13 @@
     <audio src="./sounds/tink.wav" controls id="s8"></audio>
     <audio src="./sounds/tom.wav" controls id="s9"></audio>
     <script src="drumkit.js"></script>
+    <style>
+        audio{
+            visibility: hidden;
+        }
+        button{
+            margin: 5px;
+        }
+    </style>
 </body> 
 </html>
