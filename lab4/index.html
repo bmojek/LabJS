@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Dodaj notatke</h2>
+    <button id="addButton">Dodaj Notatke</button>
+    <button id="editButton" style="display: none;">Edytuj Notatke</button>
+    <button id="clearAllNotes">Usuń wszystkie</button>
+    <div id="addNote" style="display: none;">
+        <input placeholder="Tytuł" type="text" id="title"><br>
+        <textarea placeholder="Notatka" id="content"></textarea><br>
+        <label for="color">Kolor</label>
+        <input id="color" type="color" value="#444444">
+    </div>
+    <hr>
+    <h3>Przypięte</h3>
+    <div id="pinNoteTab"></div>
+    <hr>
+    <div id="noteTab"></div>
+    <script src="main.js"></script>
+</body>
+</html>
